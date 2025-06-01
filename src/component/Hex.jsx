@@ -9,7 +9,6 @@ function Hex() {
     
     const handleChange = (e) => {
         let input = e.target.value;
-        input = input;
         if (input.length > 7) {
             input = input.slice(0, 7);
         }
@@ -18,7 +17,7 @@ function Hex() {
             if (isValidHex(input)) {
                 // перевод hex в rgb
                 const { r, g, b } = hexToRgb(input);
-                setColorBody(`rgb(${r},${g},${b})`);
+                setColorBody(`rgb(${r}, ${g}, ${b})`);
             } else {
                 setColorBody('Ошибка!');
             }

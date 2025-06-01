@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Color from './component/Color';
+import Hex from './component/Hex';
 
 function App() {
   return (
-    <Color />
+    <Hex />
   )
 }
 
